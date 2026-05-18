@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ODS 7 · Presentacion web</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: #050806; }
+    body {
+      overflow: hidden;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: white;
+    }
+    .deck {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+    .deck::-webkit-scrollbar { display: none; }
+
+    .slide {
+      flex: 0 0 100vw;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: grid;
+      place-items: center;
+      background: #050806;
+      position: relative;
+      overflow: hidden;
+    }
+    .slide img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+      background: #050806;
+    }
+    .slide video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: block;
+      background: #050806;
+    }
+    .deck-counter {
+      position: fixed;
+      right: 18px;
+      bottom: 14px;
+      z-index: 10;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.48);
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 12px;
+      font-family: ui-monospace, Consolas, monospace;
+      letter-spacing: 0.03em;
+      backdrop-filter: blur(8px);
+    }
+    .deck-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background: #84cc16;
+      z-index: 10;
+      transition: width 0.18s ease;
+    }
+    .nav-btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 58px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.22);
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 34px;
+      line-height: 1;
+      z-index: 10;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+    }
+    .nav-btn:hover { background: rgba(0, 0, 0, 0.42); color: white; }
+    .nav-prev { left: 14px; }
+    .nav-next { right: 14px; }
+
+    @media (hover: none) {
+      .nav-btn { display: none; }
+      .deck-counter { bottom: 8px; right: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" id="deck">
+    <section class="slide" data-screen-label="01 Portada"><img src="slides/source-slide-01.png" alt="Diapositiva 1" /></section>
+    <section class="slide" data-screen-label="02 Video introduccion">
+      <video src="videos/intro-video-web.mp4" controls preload="metadata" playsinline></video>
+    </section>
+    <section class="slide" data-screen-label="03 Introduccion"><img src="slides/source-slide-02.png" alt="Diapositiva 2" /></section>
+    <section class="slide" data-screen-label="04 Comparacion consumo"><img src="slides/source-slide-03.png" alt="Diapositiva 3" /></section>
+    <section class="slide" data-screen-label="05 Centros de datos"><img src="slides/source-slide-04.png" alt="Diapositiva 4" /></section>
+    <section class="slide" data-screen-label="06 Objetivo"><img src="slides/source-slide-05.png" alt="Diapositiva 5" /></section>
+    <section class="slide" data-screen-label="07 Justificacion"><img src="slides/source-slide-06.png" alt="Diapositiva 6" /></section>
+    <section class="slide" data-screen-label="08 Conceptos"><img src="slides/source-slide-07.png" alt="Diapositiva 7" /></section>
+    <section class="slide" data-screen-label="09 Renovables"><img src="slides/source-slide-08.png" alt="Diapositiva 8" /></section>
+    <section class="slide" data-screen-label="10 Retos"><img src="slides/source-slide-09.png" alt="Diapositiva 9" /></section>
+    <section class="slide" data-screen-label="11 Acciones"><img src="slides/source-slide-10.png" alt="Diapositiva 10" /></section>
+    <section class="slide" data-screen-label="12 Video innovaciones">
+      <video src="videos/innovation-video-web.mp4" controls preload="metadata" playsinline></video>
+    </section>
+    <section class="slide" data-screen-label="13 Innovacion"><img src="slides/source-slide-11.png" alt="Diapositiva 11" /></section>
+    <section class="slide" data-screen-label="14 Conclusion"><img src="slides/source-slide-12.png" alt="Diapositiva 12" /></section>
+    <section class="slide" data-screen-label="15 Referencias"><img src="slides/source-slide-13.png" alt="Diapositiva 13" /></section>
+    <section class="slide" data-screen-label="16 Gracias"><img src="slides/source-slide-14.png" alt="Diapositiva 14" /></section>
+  </main>
+
+  <button class="nav-btn nav-prev" type="button" aria-label="Diapositiva anterior">‹</button>
+  <button class="nav-btn nav-next" type="button" aria-label="Diapositiva siguiente">›</button>
+  <div class="deck-progress" id="deck-progress" aria-hidden="true"></div>
+  <div class="deck-counter" id="deck-counter">1 / 16</div>
+
+  <script>
+    (function () {
+      var deck = document.getElementById('deck');
+      var slides = deck.querySelectorAll('.slide');
+      var counter = document.getElementById('deck-counter');
+      var progress = document.getElementById('deck-progress');
+      var prev = document.querySelector('.nav-prev');
+      var next = document.querySelector('.nav-next');
+      var KEY = 'ods7-powerpoint-web-pos';
+      var active = 0;
+
+      function setActive(i) {
+        active = i;
+        if (counter) counter.textContent = (i + 1) + ' / ' + slides.length;
+        if (progress) progress.style.width = (((i + 1) / slides.length) * 100) + '%';
+        try { localStorage.setItem(KEY, String(i)); } catch (_) {}
+      }
+      function go(i) {
+        var target = Math.max(0, Math.min(slides.length - 1, i));
+        setActive(target);
+        deck.scrollTo({ left: target * deck.clientWidth, behavior: 'smooth' });
+      }
+      function syncFromScroll() {
+        var i = Math.round(deck.scrollLeft / deck.clientWidth);
+        if (i !== active && i >= 0 && i < slides.length) setActive(i);
+      }
+      function onKey(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(active + 1); }
+        else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); go(active - 1); }
+        else if (e.key === 'Home') { e.preventDefault(); go(0); }
+        else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+      }
+
+      prev.addEventListener('click', function () { go(active - 1); });
+      next.addEventListener('click', function () { go(active + 1); });
+      window.addEventListener('keydown', onKey, true);
+      document.addEventListener('keydown', onKey, true);
+      deck.addEventListener('scroll', syncFromScroll, { passive: true });
+
+      document.body.setAttribute('tabindex', '-1');
+      document.body.style.outline = 'none';
+      function focusDeck() {
+        try { window.focus(); document.body.focus({ preventScroll: true }); } catch (_) {}
+      }
+      document.addEventListener('mousedown', focusDeck);
+      window.addEventListener('load', focusDeck);
+      focusDeck();
+
+      try {
+        var saved = parseInt(localStorage.getItem(KEY) || '0', 10);
+        if (!isNaN(saved) && saved >= 0 && saved < slides.length) {
+          setActive(saved);
+          deck.scrollTo({ left: saved * deck.clientWidth, behavior: 'auto' });
+        } else {
+          setActive(0);
+        }
+      } catch (_) { setActive(0); }
+    })();
+  </script>
+</body>
+</html>
