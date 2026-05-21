@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#eefbf3"/>
+  <rect width="960" height="106" fill="#12572f"/>
+  <text x="44" y="64" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800" fill="#ffffff">Referencias APA 7</text>
+
+  <rect x="46" y="138" width="868" height="72" rx="10" fill="#ffffff" stroke="#b9efd0"/>
+  <rect x="46" y="138" width="10" height="72" fill="#78d600"/>
+  <text x="76" y="163" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="850" fill="#12572f">International Energy Agency. (2026).</text>
+  <text x="76" y="187" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#19251d">Global Energy Review 2026: Electricity supply. https://www.iea.org/reports/global-energy-review-2026/electricity-supply</text>
+
+  <rect x="46" y="226" width="868" height="72" rx="10" fill="#ffffff" stroke="#b9efd0"/>
+  <rect x="46" y="226" width="10" height="72" fill="#78d600"/>
+  <text x="76" y="251" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="850" fill="#12572f">International Energy Agency. (2026).</text>
+  <text x="76" y="275" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#19251d">Global Energy Review 2026: Electricity demand. https://www.iea.org/reports/global-energy-review-2026/electricity-demand</text>
+
+  <rect x="46" y="314" width="868" height="72" rx="10" fill="#ffffff" stroke="#b9efd0"/>
+  <rect x="46" y="314" width="10" height="72" fill="#78d600"/>
+  <text x="76" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="850" fill="#12572f">International Energy Agency. (2025).</text>
+  <text x="76" y="363" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#19251d">Tracking SDG7: The Energy Progress Report, 2025. https://www.iea.org/reports/tracking-sdg7-the-energy-progress-report-2025</text>
+
+  <rect x="46" y="402" width="868" height="72" rx="10" fill="#ffffff" stroke="#b9efd0"/>
+  <rect x="46" y="402" width="10" height="72" fill="#78d600"/>
+  <text x="76" y="427" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="850" fill="#12572f">United Nations. (s. f.).</text>
+  <text x="76" y="451" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#19251d">Goal 7: Ensure access to affordable, reliable, sustainable and modern energy for all. https://sdgs.un.org/goals/goal7</text>
+
+  <text x="480" y="505" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="800" fill="#12572f">Se dejaron las fuentes principales, en letra grande, para que sean legibles durante la exposición.</text>
+</svg>

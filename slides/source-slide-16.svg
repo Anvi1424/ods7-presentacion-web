@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#eefbf3"/>
+  <rect width="960" height="106" fill="#12572f"/>
+  <text x="44" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">07  |  Del diagnóstico a la acción</text>
+  <text x="48" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#12572f">Problema → solución</text>
+
+  <rect x="58" y="176" width="352" height="245" fill="#102d1e"/>
+  <circle cx="104" cy="218" r="25" fill="#78d600"/>
+  <text x="104" y="227" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="900" fill="#103018">1</text>
+  <text x="210" y="223" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="850" fill="#78d600">Problemas</text>
+  <text x="92" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">1. Energía cara</text>
+  <text x="92" y="323" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">2. Dependencia fósil</text>
+  <text x="92" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">3. Red inestable</text>
+
+  <circle cx="480" cy="298" r="54" fill="#78d600"/>
+  <text x="480" y="315" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="900" fill="#12572f">→</text>
+
+  <rect x="550" y="176" width="352" height="245" fill="#102d1e"/>
+  <circle cx="596" cy="218" r="25" fill="#78d600"/>
+  <text x="596" y="227" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="900" fill="#103018">2</text>
+  <text x="722" y="223" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="850" fill="#78d600">Soluciones</text>
+  <text x="584" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">1. Ahorrar energía</text>
+  <text x="584" y="323" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">2. Usar renovables</text>
+  <text x="584" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ecfbf2">3. Dar mantenimiento</text>
+
+  <rect x="42" y="464" width="876" height="44" rx="7" fill="#ecfbf2" stroke="#b9efd0"/>
+  <text x="480" y="491" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#12572f">La meta no es solo producir más energía: es usarla mejor y hacerla accesible.</text>
+</svg>

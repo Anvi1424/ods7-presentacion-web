@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#12572f"/>
+  <circle cx="116" cy="505" r="190" fill="#1d733f" opacity="0.45" stroke="#78d600" stroke-opacity="0.35"/>
+  <circle cx="870" cy="455" r="210" fill="#1d733f" opacity="0.35" stroke="#78d600" stroke-opacity="0.35"/>
+  <circle cx="480" cy="146" r="96" fill="#78d600"/>
+  <path d="M 437 111 C 456 91 486 88 514 100 C 533 109 548 126 549 146 C 550 168 536 187 514 196 C 493 206 466 202 448 187 C 426 169 419 133 437 111 Z" fill="#2d8636"/>
+  <path d="M 492 104 C 501 116 491 126 481 121 C 471 116 457 123 454 135 C 451 146 462 153 476 150 C 493 146 501 154 498 166 C 494 185 510 192 526 181 C 538 173 539 157 529 145 C 518 133 522 121 535 116 C 522 105 508 100 492 104 Z" fill="#78d600"/>
+  <path d="M 557 169 L 599 169 C 607 169 611 178 606 184 L 577 221 C 572 228 561 223 563 215 L 571 187 L 535 187 C 527 187 523 178 528 172 L 558 134 C 563 127 574 132 572 140 Z" fill="#ffd54d"/>
+
+  <text x="480" y="310" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">Porque de nada sirve tener presupuesto</text>
+  <text x="480" y="356" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">y apoyo técnico si no existe la voluntad</text>
+  <text x="480" y="402" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="900" fill="#ffffff">de <tspan fill="#ffd54d">ejercer un cambio</tspan>, aunque sea mínimo.</text>
+  <line x1="240" y1="430" x2="720" y2="430" stroke="#78d600" stroke-width="3"/>
+  <text x="480" y="470" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#dff5e8">Energía limpia, accesible y consciente.</text>
+</svg>

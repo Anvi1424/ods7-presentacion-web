@@ -2,6 +2,8 @@
 
 Presentacion web tipo PowerPoint para GitHub Pages.
 
+Version actual: 19 diapositivas, con graficas recientes, acciones escolares y cierre actualizado.
+
 ## Publicacion
 
 1. Subir todo el contenido de esta carpeta a un repositorio de GitHub.

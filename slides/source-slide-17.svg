@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#eefbf3"/>
+  <rect width="960" height="106" fill="#12572f"/>
+  <text x="44" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="800" fill="#ffffff">08  |  Aplicación local</text>
+  <text x="48" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#12572f">¿Qué se puede hacer en la escuela?</text>
+
+  <rect x="54" y="172" width="372" height="272" rx="10" fill="#102d1e"/>
+  <rect x="126" y="260" width="228" height="92" rx="10" fill="#ecfbf2"/>
+  <rect x="110" y="244" width="260" height="20" rx="6" fill="#78d600"/>
+  <rect x="184" y="204" width="146" height="46" rx="5" fill="#12572f" stroke="#ecfbf2" stroke-width="4"/>
+  <rect x="197" y="209" width="18" height="36" fill="#78d600"/>
+  <rect x="229" y="209" width="18" height="36" fill="#78d600"/>
+  <rect x="261" y="209" width="18" height="36" fill="#78d600"/>
+  <rect x="293" y="209" width="18" height="36" fill="#78d600"/>
+  <text x="240" y="395" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="850" fill="#ffffff">Una escuela también</text>
+  <text x="240" y="425" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="850" fill="#ffffff">puede ser parte del ODS 7</text>
+
+  <rect x="464" y="172" width="440" height="272" rx="10" fill="#ffffff" stroke="#b9efd0"/>
+  <text x="496" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="850" fill="#12572f">Plan breve</text>
+
+  <circle cx="520" cy="259" r="22" fill="#12572f"/>
+  <text x="520" y="267" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">1</text>
+  <text x="558" y="266" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#111a14">Revisar consumo eléctrico</text>
+
+  <circle cx="520" cy="315" r="22" fill="#12572f"/>
+  <text x="520" y="323" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">2</text>
+  <text x="558" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#111a14">Cambiar hábitos y focos</text>
+
+  <circle cx="520" cy="371" r="22" fill="#12572f"/>
+  <text x="520" y="379" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff">3</text>
+  <text x="558" y="378" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#111a14">Informar con campañas</text>
+
+  <rect x="42" y="464" width="876" height="44" rx="7" fill="#ecfbf2" stroke="#b9efd0"/>
+  <text x="480" y="491" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#12572f">Medir, ahorrar, informar y mantener conecta el ODS 7 con acciones reales del grupo.</text>
+</svg>
